@@ -7,7 +7,7 @@
 [http://35.179.90.61](http://35.179.90.61)
 
 ## Screenshot
-![Landing Page](LandingPage.jpg)
+![Landing Page](LandingPage.JPG)
 
 ## Tech Stack
 - Node.js
