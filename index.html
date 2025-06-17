@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just Build It</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="animated-header">
+    <h1>Just Build It</h1>
+    <p>An Innovative Startup for Construction Material Estimation</p>
+    <small>by Musa-Bello Qudous — Lead Cloud Engineer</small>
+  </header>
+
+  <!-- Pitch Section -->
+  <section class="pitch">
+    <h2>Why Just Build It is Innovative</h2>
+    <p>Just Build It is an innovative startup where anyone can find out the cost of materials for any construction project — from homes to high-rises, office buildings, recreational parks, hotels, and hospitality resorts.</p>
+  </section>
+
+  <!-- Live Building Material Price Dashboard -->
+  <section class="dashboard">
+    <h2>Live Material Prices</h2>
+    <div class="price-grid">
+      <div class="price-card" id="cement">🧱 Cement: ₦3,800</div>
+      <div class="price-card" id="iron">🔩 Iron Rods: ₦5,200</div>
+      <div class="price-card" id="sand">🏖️ Sharp Sand: ₦25,000/ton</div>
+    </div>
+  </section>
+
+  <!-- Material Cost Estimator -->
+  <section class="estimator">
+    <h2>Material Cost Estimator</h2>
+    <form id="estimate-form">
+      <input type="text" placeholder="Building Type (e.g. 3-bedroom)" required />
+      <input type="number" placeholder="Area in sqm" required />
+      <input type="number" placeholder="No. of Floors" required />
+      <button type="submit">Estimate Cost</button>
+    </form>
+    <div id="estimate-result"></div>
+  </section>
+
+  <!-- Search + Filter Section -->
+  <section class="shop">
+    <h2>Browse Equipment & Tools</h2>
+    <input type="text" id="searchBar" placeholder="Search items..." />
+    <div class="filters">
+      <button onclick="filterItems('all')">All</button>
+      <button onclick="filterItems('home')">Home</button>
+      <button onclick="filterItems('office')">Office</button>
+      <button onclick="filterItems('garden')">Garden</button>
+    </div>
+    <div class="shop-grid" id="productGrid">
+      <div class="item-card home">Sofa Set</div>
+      <div class="item-card office">Office Chair</div>
+      <div class="item-card garden">Lawn Mower</div>
+      <div class="item-card construction">Wheelbarrow</div>
+    </div>
+  </section>
+
+  <!-- Project Timeline -->
+  <section class="timeline">
+    <h2>Project Timeline</h2>
+    <ul class="timeline-steps">
+      <li>📍 Site Clearing</li>
+      <li>📐 Foundation Works</li>
+      <li>🏗️ Structural Frame</li>
+      <li>🧱 Blockwork & Roofing</li>
+      <li>🎨 Finishes & Handover</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
